@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>exercice4 tp2 avec bootstrap</title>
+    <style>
+        .en-tete, .section0, .section1, .section2, .section3, .section4, .section5, .section6, footer {
+            border: 2px solid blue;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .en-tete {
+            background-color: rgb(64, 64, 245);
+            height: 70px;
+            text-align: center;
+        }
+        .section0 {
+            background-color: rgb(135, 128, 57);
+            height: 100px;
+        }
+        .ligne, .Autre { 
+            flex-direction: row;
+        }
+        .section1, .section2, .section3, .section4, .section5, .section6 {
+            width: 100%;
+            height: 140px;
+            margin-bottom: 20px;
+            background-color:rgb(156, 210, 239);
+
+        }
+        .section1, .section2, .section3, .section5{
+            margin-right: 10px;
+        }
+        .section5, .section6 {
+            height: 225px;
+            background-color:rgb(101, 192, 249);
+            width: 49%;
+
+        }
+        footer {
+            background-color: rgb(177, 117, 249);
+            height: 80px;
+            text-align: center;
+        }
+        @media (max-width: 767px) {
+            .section1, .section2, .section3, .section4, .section5, .section6 {
+                width: 100%;
+                margin-right: 0; 
+            }
+            .section5, .section6 {
+                width: 100%; 
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="en-tete"><h3>header</h3></header>
+        <section class="section0"><h3>section0</h3></section>
+        <div class="row ligne">
+            <div class="col-md-3 section1"><h3>section1</h3></div>
+            <div class="col-md-3 section2"><h3>section2</h3></div>
+            <div class="col-md-3 section3"><h3>section3</h3></div>
+            <div class="col-md-3 section4"><h3>section4</h3></div>
+        </div>
+        <div class="row Autre">
+            <div class="col-md-6 section5"><h3>section5</h3></div>
+            <div class="col-md-6 section6"><h3>section6</h3></div>
+        </div>
+        <footer><h3>footer</h3></footer>
+    </div>
+
+    
+</body>
+</html>
